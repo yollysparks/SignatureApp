@@ -29,6 +29,7 @@ Other classes that you might use also have draw()methods.
  For example, you'll probably have some Drawable objects that you want to put on the Canvas. Drawable has its own draw() method that takes your Canvas as an argument. 
 
 Creating our android canvas application.
+
 - Open Eclipse IDE and go to File → New → Project → Android Application Project.
 - Specify the name of the application, the project and the package and then click Next.
 - In the next window, the “Create Activity” option should be checked. The new created activity will be the main activity of your 
@@ -37,7 +38,9 @@ Creating our android canvas application.
 - Create a CanvasView class where we will have the source code for the main activity.
 
 In this code snippet from the CanvasView class, we set up a new Canvas. This canvas will draw onto the defined Bitmap.
+
 @Override
+
 protected void onSizeChanged(int w, int h, int oldw, int oldh) {
 
 	super.onSizeChanged(w, h, oldw, oldh);
