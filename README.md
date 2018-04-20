@@ -28,12 +28,15 @@ Other classes that you might use also have draw()methods.
 
  For example, you'll probably have some Drawable objects that you want to put on the Canvas. Drawable has its own draw() method that takes your Canvas as an argument. 
 
- 
+Creating our android canvas application.
+- Open Eclipse IDE and go to File → New → Project → Android Application Project.
+- Specify the name of the application, the project and the package and then click Next.
+- In the next window, the “Create Activity” option should be checked. The new created activity will be the main activity of your 
+  project. Then press Next button.
+- Select the “Blank Activity” option and press Next.
+- Create a CanvasView class where we will have the source code for the main activity.
 
-The code above in detail.
-
-In this code snippet, we set up a new Canvas. This canvas will draw onto the defined Bitmap.
-
+In this code snippet from the CanvasView class, we set up a new Canvas. This canvas will draw onto the defined Bitmap.
 @Override
 protected void onSizeChanged(int w, int h, int oldw, int oldh) {
 
@@ -63,8 +66,7 @@ public boolean onTouchEvent(MotionEvent event) {
 		
 		invalidate();
 		
-		break;
-		
+		break;		
 	case MotionEvent.ACTION_MOVE:
 	
 		moveTouch(x, y);
@@ -105,22 +107,10 @@ protected void onDraw(Canvas canvas) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+What i learned.
   
 With the knowledge I have acquired on canvas I intended to use canvas in creating a 2D graphics app. I managed to create a signature app where someone can write his/her signature save it and paste it on a document. I decided on the signature app because I have had certain instance where I had to print a document and put my signature then scan the document and send, and at that moment my printer was not working so it took time for me to print sign and scan and send the document. With the app it is a matter of seconds no printer or scanner is needed so it saves time and money. 
-Though it is not a complete project, but I managed to create the signature app where someone can sign and clear screen just in case one makes a mistake
+Though it is not a complete project, but I managed to create the signature app where someone can sign and clear screen just in case one makes a mistake.
 
 
 
