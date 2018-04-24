@@ -1,5 +1,5 @@
 
-   #                                             Canvas. 
+   #                                             Canvas 2D. 
 
 
 In a simple layman's language, a canvas is like a blank place like a blank paper /material where someone can write/paint on.
@@ -87,6 +87,20 @@ protected void onDraw(Canvas canvas) {
 	super.onDraw(canvas);
 	canvas.drawPath(mPath, mPaint);
 } 
+
+The clear Canvas Method is called to clear the drawing, in it we call an invalidate method which forces redraw.
+
+ // for clearing the signature
+ 
+    public void clearCanvas() {
+    
+        mPath.reset();
+        invalidate();
+    }
+
+# Summary 
+You are creating a view class then extends View. You override the onDraw(). You add the path of where finger touches and moves. You override the onTouch() of this purpose. In your onDraw() you draw the paths using the paint of your choice. You should call invalidate() to refresh the view.
+
 
 # Creating a layout for the main ( mainActivity)
 We are going to make a very simple layout xml for the AndroidCanvasExample.class, that only consists of a FrameLayout that contains the custom CanvasView, the component from the custom class we are going to make in the lines below. I have chosen the FrameLayout for our external layout, because we want to add a “Clear Button” that will clear, invalidate and empty our canvas. This FrameLayout helped us add the Button above the canvas, like placing it on a seperate layout on top.
