@@ -69,7 +69,9 @@ public boolean onTouchEvent(MotionEvent event) {
 	return true;
                    }
 We transform the x,y event coordinates into path moves.
+
 private void moveTouch(float x, float y) {
+
 	float dx = Math.abs(x - mX);
 	float dy = Math.abs(y - mY);
 	if (dx >= TOLERANCE || dy >= TOLERANCE) {
@@ -84,6 +86,7 @@ And by overriding the onDraw event, we draw our path onto the canvas.'
 
 @Override
 protected void onDraw(Canvas canvas) {
+
 	super.onDraw(canvas);
 	canvas.drawPath(mPath, mPaint);
 } 
