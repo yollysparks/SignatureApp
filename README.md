@@ -111,6 +111,7 @@ We are going to make a very simple layout xml for the AndroidCanvasExample.class
 Open res/layout/activity_main.xml, go to the respective xml tab and this is what we will have
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -124,6 +125,7 @@ Open res/layout/activity_main.xml, go to the respective xml tab and this is what
         android:layout_height="match_parent"
         android:textColor="#FFFFFF" />
    <Button
+   
     android:id="@+id/button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -134,6 +136,7 @@ Open res/layout/activity_main.xml, go to the respective xml tab and this is what
     android:visibility="visible"
     tools:text="New" />
    <Button
+   
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
