@@ -1,10 +1,8 @@
-#                                              My SignatureApp
-
 
    #                                             Canvas. 
 
 
-In a simple layman language, a canvas is like a blank place like a blank paper /material where someone can write/paint on.
+In a simple layman's language, a canvas is like a blank place like a blank paper /material where someone can write/paint on.
  A Canvas works for you as a pretense, or interface, to the actual surface upon which your graphics will be drawn — it holds all of your "draw" calls. Via the Canvas, your drawing is actually performed upon an underlying Bitmap, which is placed into the window. To draw something, you need 4 basic components: 
  
 •	A canvas object. Very simplified, a Canvas is a logical 2D drawing surface that provides methods for drawing onto a bitmap.
@@ -130,7 +128,7 @@ Open res/layout/activity_main.xml, go to the respective xml tab and this is what
 
 # Conclusion
 
-With the knowledge I have acquired on canvas I intended to use canvas in creating a 2D graphics app. I managed to create a signature app where someone can write his/her signature save it and paste it on a document. I decided on the signature app because I have had certain instance where I had to print a document and put my signature then scan the document and send, and at that moment my printer was not working so it took time for me to print sign and scan and send the document. With the app it is a matter of seconds no printer or scanner is needed so it saves time and money. 
+With the knowledge I have acquired on canvas I intended to use canvas in creating a 2D graphics app. I managed to create a signature app where someone can write his/her signature and clear the canvas . I decided  to build on the signature app because I have had certain instance where I had to print a document and put my signature then scan the document and send, and at that moment my printer was not working so it took time for me to print sign and scan and send the document. With the app it is a matter of seconds no printer or scanner is needed so it saves time and money.  
 Though it is not a complete project, but I managed to create the signature app where someone can sign and clear screen just in case one makes a mistake.
 
 
